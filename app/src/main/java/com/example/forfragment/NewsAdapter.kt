@@ -12,7 +12,6 @@ class NewsAdapter (val news: ArrayList<News>) : RecyclerView.Adapter<NewsAdapter
     inner class NewsViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val name = itemView.findViewById<TextView>(R.id.name)
         val desc = itemView.findViewById<TextView>(R.id.description)
-        val img =  itemView.findViewById<ImageView>(R.id.avatar)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NewsViewHolder {
@@ -25,7 +24,6 @@ class NewsAdapter (val news: ArrayList<News>) : RecyclerView.Adapter<NewsAdapter
         val news = news[position]
         holder.name.text = news.name
         holder.desc.text = news.description
-        holder.img.setImageResource(news.avatar)
     }
 
     override fun getItemCount(): Int {

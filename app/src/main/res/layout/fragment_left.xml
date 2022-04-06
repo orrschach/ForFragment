@@ -49,6 +49,6 @@
         android:layout_weight="1"
         android:background="@color/white"
         android:textColor="@color/gray"
-        android:drawableTop="@drawable/ic_vx_foreground"/>
+        android:drawableTop="@drawable/ic_ps_foreground"/>
 
 </LinearLayout>

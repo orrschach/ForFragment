@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
         val frag =manager.findFragmentByTag(tag)?:
         when (tag){
            TAG_LIFE-> RightFragment("微信")
-           TAG_WORK->RightFragment("通讯录")
+           TAG_WORK->AddressbookFragment("通讯录")
            TAG_DISCOVERY-> RightFragment("发现")
            else-> RightFragment("我")
         }
