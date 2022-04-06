@@ -21,10 +21,7 @@ class AddressAdapter(val persons: ArrayList<Person>): RecyclerView.Adapter<Addre
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AddressbookViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_address,parent,false)
         val holder = AddressbookViewHolder(view)
-        val ds=holder.desc.text
-        val na=holder.name.text
-        Log.d(TAG,"desc is $ds")
-        Log.d(TAG,"desc is $na")
+
         return holder
     }
 
@@ -33,11 +30,8 @@ class AddressAdapter(val persons: ArrayList<Person>): RecyclerView.Adapter<Addre
 
         holder.name.text = person.name
         holder.desc.text = person.description
-        val ds=holder.desc.text
-        val na=holder.desc.text
         holder.ava.setImageResource(person.avatar)
-        Log.d(TAG,"desc is $ds")
-        Log.d(TAG,"desc is $ds")
+
     }
 
     override fun getItemCount(): Int {
