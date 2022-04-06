@@ -27,6 +27,7 @@ class RightFragment(val title:String) : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         view.findViewById<TextView>(R.id.title).text = title
+        view.findViewById<TextView>(R.id.content).text = title
         Log.d(TAG,"onViewCreated")
 
     }
