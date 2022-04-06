@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    tools:context=".LeftFragment">
+
+    <Button
+        android:text="微信"
+        android:id="@+id/btn_life"
+        android:background="@color/white"
+        android:textColor="@color/gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/ic_vx_foreground"
+
+        />
+
+
+    <Button
+        android:id="@+id/btn_work"
+        android:text="通讯录"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:textColor="@color/gray"
+        android:drawableTop="@drawable/ic_txl_foreground"
+        />
+
+    <Button
+        android:id="@+id/btn_discovery"
+        android:text="发现"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:textColor="@color/gray"
+        android:drawableTop="@drawable/ic_fx_foreground"/>
+
+    <Button
+        android:id="@+id/btn_me"
+        android:text="我"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:textColor="@color/gray"
+        android:drawableTop="@drawable/ic_vx_foreground"/>
+
+</LinearLayout>

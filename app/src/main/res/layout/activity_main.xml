@@ -4,17 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:screenOrientation="portrait">
 
     <fragment
-        android:id="@+id/left_fragment"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"/>
+        android:id="@+id/left"
+        android:name="com.example.forfragment.LeftFragment"
+        tools:layout="@layout/fragment_left"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent=".14"  />
 
-    <fragment
-        android:id="@+id/right_fragment"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        app:layout_constraintTop_toTopOf="@+id/left_fragment" />
+
+    <androidx.fragment.app.FragmentContainerView
+
+        android:id="@+id/right"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/left"
+        app:layout_constraintHeight_percent=".86"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/hint"
+        app:layout_constraintTop_toTopOf="@id/right"
+        app:layout_constraintBottom_toBottomOf="@id/right"
+        app:layout_constraintStart_toStartOf="@id/right"
+        app:layout_constraintEnd_toEndOf="@id/right"
+        android:text="请点击下侧标签"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
